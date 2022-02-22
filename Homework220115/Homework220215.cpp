@@ -29,7 +29,6 @@ public:
     inline void operator=(const GameArray& _Other)
     {
         ReSize(_Other.Size_);
-        //¾èÀº º¹»ç
 
         for (size_t i = 0; i < this->Size_; i++)
         {
@@ -58,37 +57,12 @@ public:
 
     void ReSize(unsigned int _Size)
     {
-        int BeforeSize = Size_;
-        int AfterSize = _Size;
-        GameArray CopyArray = GameArray();
-        CopyArray.ArrData_ = new DataType[Size_];
-        if (nullptr != ArrData_)
-        {
-            for (int i = 0; i < BeforeSize; i++)
-            {
-                CopyArray.ArrData_[i] = this->ArrData_[i];
-            }
-        }
         Release();
-        ArrData_ = new DataType[AfterSize];
+        ArrData_ = new DataType[_Size];
         Size_ = _Size;
-        if (BeforeSize > AfterSize)
-        {
-            for (int i = 0; i < AfterSize; i++)
-            {
-                ArrData_[i] = CopyArray.ArrData_[i];
-            }
-        }
-        if (BeforeSize < AfterSize)
-        {
-            for (int i = 0; i < BeforeSize; i++)
-            {
-                ArrData_[i] = CopyArray.ArrData_[i];
-            }
-        }
     }
 
-public:
+public: 
     GameArray(unsigned int _Size)
         : ArrData_(nullptr)
         , Size_(0)
@@ -113,7 +87,10 @@ int main()
     _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
     GameArray NewArray = GameArray(10);
-    GameArray NewArray2 = GameArray(10);
+    GameArray NewArray2 = GameArray(20);
+    GameArray NewArray3 = GameArray(5);
+    int Size = sizeof(GameArray);
+
 
     for (size_t i = 0; i < NewArray.GetSize(); i++)
     {

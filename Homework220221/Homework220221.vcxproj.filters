@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Contents">
+      <UniqueIdentifier>{a95ca1cf-80ea-4d0d-86d9-28c28263efd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{6a21dccd-3627-4f90-a7f6-ccfc3deb250a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\AR40-main\CPP\Snake\Engine\ConsoleRandom.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\AR40-main\CPP\Snake\Engine\ConsoleScreen.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\AR40-main\CPP\Snake\Engine\ConsoleMath.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\AR40-main\CPP\Snake\Engine\ConsoleObject.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\AR40-main\CPP\Snake\Body.h">
+      <Filter>Contents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\AR40-main\CPP\Snake\GameBlock.h">
+      <Filter>Contents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\AR40-main\CPP\Snake\GlobalGameLogic.h">
+      <Filter>Contents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\AR40-main\CPP\Snake\Head.h">
+      <Filter>Contents</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\AR40-main\CPP\Snake\Engine\ConsoleScreen.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\AR40-main\CPP\Snake\Engine\ConsoleMath.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\AR40-main\CPP\Snake\Engine\ConsoleObject.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\AR40-main\CPP\Snake\Engine\ConsoleRandom.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\AR40-main\CPP\Snake\Body.cpp">
+      <Filter>Contents</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\AR40-main\CPP\Snake\GameBlock.cpp">
+      <Filter>Contents</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\AR40-main\CPP\Snake\GlobalGameLogic.cpp">
+      <Filter>Contents</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\AR40-main\CPP\Snake\Head.cpp">
+      <Filter>Contents</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\AR40-main\CPP\Snake\Snake.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\AR40-main\CPP\Snake\Snake.vcxproj">
+      <Filter>Contents</Filter>
+    </None>
+    <None Include="..\..\AR40-main\CPP\Snake\Snake.vcxproj.filters">
+      <Filter>Contents</Filter>
+    </None>
+  </ItemGroup>
+</Project>
